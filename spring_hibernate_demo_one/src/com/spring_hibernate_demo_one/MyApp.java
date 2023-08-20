@@ -9,15 +9,13 @@ public class MyApp {
 		//load configuration file
 		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		BaseballCoach coach=context.getBean("baseballCoach",BaseballCoach.class);
+		Vehicle newCar=context.getBean("car",Car.class); 
 		
-	   System.out.println(coach.getBaseballCoachName()+" is the coach of liverpool");
-	   
-	   System.out.println(coach.getCoachingYear()+" number of coaching year");
-	   
+		
+         System.out.println(newCar.getFuelType());
 	   
 	   
-	   context.close();
+	    context.close();
 		
 	   
 		

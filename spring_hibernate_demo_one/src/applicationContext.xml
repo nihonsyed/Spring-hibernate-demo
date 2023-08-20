@@ -17,18 +17,4 @@
     
     
     
-    <!--  Define your beans here-->
-    
-    
-    <!--  
-    <bean
-    
-    id="myCoach"
-    class="com.spring_hibernate_demo_one.BaseballCoach"
-    init-method="init"
-    destroy-method="end"
-    >
-    <property name="nameOfTheCoach" value="${baseball.coach.name}"></property>
-    </bean>
-    -->
 </beans>
