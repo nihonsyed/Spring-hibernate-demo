@@ -9,10 +9,10 @@ public class MyApp {
 		//load configuration file
 		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Vehicle newCar=context.getBean("car",Car.class); 
 		
+		VehicleDetails vehicleDetails=context.getBean("vehicleDetails",VehicleDetails.class);
 		
-         System.out.println(newCar.getFuelType());
+		System.out.println(vehicleDetails.getFuelOfBike());
 	   
 	   
 	    context.close();
