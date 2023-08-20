@@ -12,9 +12,15 @@
     <context:property-placeholder location="classpath:properties/application.properties" />
     
     
+    <!-- component scanning have been enabled for the package -->
+     <context:component-scan base-package="com.spring_hibernate_demo_one" />
+    
+    
     
     <!--  Define your beans here-->
     
+    
+    <!--  
     <bean
     
     id="myCoach"
@@ -24,5 +30,5 @@
     >
     <property name="nameOfTheCoach" value="${baseball.coach.name}"></property>
     </bean>
-
+    -->
 </beans>

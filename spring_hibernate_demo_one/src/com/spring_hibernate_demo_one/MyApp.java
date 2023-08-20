@@ -9,9 +9,11 @@ public class MyApp {
 		//load configuration file
 		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		BaseballCoach coach=context.getBean("myCoach",BaseballCoach.class);
+		BaseballCoach coach=context.getBean("baseballCoach",BaseballCoach.class);
 		
 	   System.out.println(coach.getBaseballCoachName()+" is the coach of liverpool");
+	   
+	   System.out.println(coach.getCoachingYear()+" number of coaching year");
 	   
 	   
 	   
