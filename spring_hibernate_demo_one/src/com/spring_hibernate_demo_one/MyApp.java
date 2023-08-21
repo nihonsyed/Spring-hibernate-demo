@@ -12,11 +12,11 @@ public class MyApp {
 		
 		
 		
-		VehicleDetails vehicleDetails1=context.getBean("vehicleDetails",VehicleDetails.class);
+		//VehicleDetails vehicleDetails=context.getBean("vehicleDetails",VehicleDetails.class);
 		
-		VehicleDetails vehicleDetails2=context.getBean("vehicleDetails",VehicleDetails.class);
 		
-		System.out.println(vehicleDetails1==vehicleDetails2);
+		
+
 	   
 	   
 	    context.close();
